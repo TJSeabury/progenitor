@@ -1,0 +1,123 @@
+/* 
+Progenitor.io Framework - Default Theme
+-----
+
+Description:
+All styles pertaining to the colors, images, shapes, shadows and
+highlighting shall be contained herein.
+
+TODO: 
+- reset browser styles
+- default html element styles
+- index and documentation of class styles
+
+Index:
+
+-----
+Authors - Tyler Seabury, Austin Seabury
+Copyright © 2016 - Progenitor.io 
+*/
+
+html,
+body {
+    background-color: #f0f0f0;
+}
+
+.full-width-fixed {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+    animation-name: cyclecolor;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cyclecolor {
+    from {filter: hue-rotate(0deg); -webkit-filter: hue-rotate(0deg);}
+    to {filter: hue-rotate(360deg); -webkit-filter: hue-rotate(360deg);}
+}
+
+a {
+    position: relative;
+    color: #59b300;
+    text-shadow: 2px 2px 1px #404040;
+    /*background-color: rgba(0,0,0,0.5); /* #262626 */
+    background-image: url("../img/triangles.png");
+    background-position: center;
+    
+}
+
+a:hover {
+    color: #73e600;
+    cursor: pointer;
+}
+
+a:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#59b300+0,ffffff+100&0.1+0,0+100 */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(89,179,0,0.1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(89,179,0,0.1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(89,179,0,0.1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a59b300', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    z-index: 999;
+}
+
+.dark-gray-bkg-50 {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.dark-gray-bkg {
+    background-color: rgba(0,0,0,0.85); /* #333333 */
+}
+
+.nav-site-title {
+    color: #59b300;
+    text-shadow: 2px 2px 1px #404040;
+    /*background-color: rgba(0,0,0,0.5);*/
+    background-image: url("../img/triangles.png");
+    background-position: center;
+}
+
+.image-backdrop {
+    background-color: #4d4d4d;
+    background-image: url('../img/default-bkg.jpg');/*Replace this with your own image.*/
+    background-size: cover;
+    
+}
+
+.image-backdrop::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-image: url("../img/pattern.png");
+    background-size: 0.2%;
+    background-repeat: repeat;*/
+    z-index: 1;
+}
+
+.image-overlay-banner{
+    /*background-color: rgba(0,0,0,0.5);*/
+    color: #59b300;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.84+0,0+100 */
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.84) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.84) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,0.84) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    z-index: 100;
+}
+
+.txt-color-offwhite {
+	color: #f0f0f0;
+}
+
+.txt-color-prog-green {
+    color: #59b300;
+}

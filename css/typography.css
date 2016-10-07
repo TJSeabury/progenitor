@@ -1,0 +1,36 @@
+/* 
+Progenitor.io Framework - Typography
+-----
+
+Description:
+All styles pertaining to the fonts, line spacing, etc. shall be contained herein.
+
+TODO: 
+- reset browser styles
+- default html element styles
+- index and documentation of class styles
+
+Index:
+
+-----
+Authors - Tyler Seabury, Austin Seabury
+Copyright © 2016 - Progenitor.io 
+*/
+
+html {
+    font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
+    font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 18.5px;
+}
+
+nav a {
+	font-size: 20px;
+}
+
+.nav-site-title {
+	font-size: 28px;
+    font-weight: 900;
+}

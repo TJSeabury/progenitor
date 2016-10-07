@@ -1,0 +1,99 @@
+#slider-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	width: 90%;
+	margin: 0px auto;
+}	
+
+#slider {
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+#slider ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	list-style: none;
+}
+
+#slider ul li {
+	position: relative;
+	display: flex;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 70vw;
+	height: 30vw;
+	background-color: transparent;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.left-column {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 50px;
+}
+
+.left-column img {
+	max-width: 100%;
+    max-height: 100%;
+	width: 100%;
+	height: auto;
+}
+
+.right-column {
+	width: 60%;
+	display: flex;
+	padding-top: 50px;
+	padding-left: 50px;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+button.control_prev, button.control_next {
+	position: absolute;
+	top: calc(50% - 64px);
+	z-index: 999;
+	display: block;
+	margin: none;
+	padding: none;
+	border: none;
+	background-color: transparent;
+	opacity: 0.6;
+	cursor: pointer;
+	background-position: center;
+	width: 128px;
+	height: 128px;
+	outline: none;
+}
+
+button.control_prev:hover, button.control_next:hover {
+	opacity: 1;
+	transition: all 0.2s ease;
+}
+
+button.control_prev:active, button.control_next:active {
+	opacity: 0.3;
+	transition: all 0.1s ease;
+}
+
+button.control_prev {
+	background-image: url("../img/arrow-left.png");
+	left: 0px;
+}
+
+button.control_next {
+	background-image: url("../img/arrow-right.png");
+	right: 0px;
+}
